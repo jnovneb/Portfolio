@@ -19,7 +19,9 @@ export default function Hero() {
         From frontend UIs to backend APIs, I enjoy turning complex ideas into intuitive, scalable, and engaging user experiences.      </p>
       <div className="flex justify-center gap-4">
         <Button>See Projects</Button>
-        <Button variant="outline">Download CV</Button>
+        <a href='JavierNovellaNebotCV.pdf' download className='inline-block'>
+          <Button variant="outline">Download CV</Button>
+        </a>
       </div>
     </section>
   )
