@@ -17,13 +17,13 @@ export default function Contact() {
         Feel free to reach out via email or connect on LinkedIn or GitHub.
       </p>
       <div className="flex justify-center gap-6 mt-4">
-        <a href="mailto:javier@example.com" aria-label="Email">
+        <a href="mailto:javier.novella.nebot@gmail.com" aria-label="Email">
           <Mail className="w-6 h-6 text-white hover:text-blue-400" />
         </a>
-        <a href="https://github.com/javier" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a href="https://github.com/jnovneb" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <Github className="w-6 h-6 text-white hover:text-gray-400" />
         </a>
-        <a href="https://linkedin.com/in/javier" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/javier-novella-nebot-6a26741a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <Linkedin className="w-6 h-6 text-white hover:text-blue-600" />
         </a>
       </div>
