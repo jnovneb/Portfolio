@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { Link as ScrollLink } from 'react-scroll'
 
 export default function Hero() {
   return (
@@ -18,7 +19,15 @@ export default function Hero() {
         I’ve worked extensively with AI, building and integrating LLMs into full web applications, along with lots of other fun stuff.
         From frontend UIs to backend APIs, I enjoy turning complex ideas into intuitive, scalable, and engaging user experiences.      </p>
       <div className="flex justify-center gap-4">
-        <Button>See Projects</Button>
+        <ScrollLink
+        to="projects"
+        smooth={true}
+        duration={500}
+        className="cursor-pointer"
+        >
+          <Button>See Projects</Button>
+        </ScrollLink>
+        
         <a href='JavierNovellaNebotCV.pdf' download className='inline-block'>
           <Button variant="outline">Download CV</Button>
         </a>
