@@ -29,7 +29,9 @@ export default function Hero() {
         </ScrollLink>
         
         <a href='JavierNovellaNebotCV.pdf' download className='inline-block'>
-          <Button variant="outline">Download CV</Button>
+          <Button variant="outline" className="bg-white text-black hover:bg-gray-100 
+               dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 
+               transition-colors duration-200">Download CV</Button>
         </a>
       </div>
     </section>

@@ -120,3 +120,40 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  background: linear-gradient(120deg, #1e1e2f, #232946);
+  color: #f4f4f5;
+}
+
+/* Aurora-style animated background */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(270deg, #232946, #2e2f5b, #1e1e2f);
+  background-size: 600% 600%;
+  animation: gradientShift 20s ease infinite;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Dark mode overrides */
+.dark body {
+  --tw-bg-opacity: 1;
+  background-color: #0f0f1a;
+  color: #eaeaea;
+}
