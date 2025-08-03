@@ -52,7 +52,7 @@ cd portfolio
 2. Install dependencies:
 
 ```bash
-npm install
+npm install next react react-dom 
 ```
 
 3. Run the development server: 
