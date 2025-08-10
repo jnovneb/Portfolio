@@ -52,7 +52,7 @@ cd portfolio
 2. Install dependencies:
 
 ```bash
-npm install next react react-dom 
+npm install next react react-dom react-tsparticles
 ```
 
 3. Run the development server: 
