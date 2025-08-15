@@ -1,4 +1,5 @@
 'use client'
+
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import Link from 'next/link'
@@ -12,7 +13,22 @@ const projects = [
     easy user onboarding, and seamless integration with existing infrastructure.`,
     repoUrl: 'https://github.com/jnovneb/OrchestVPN'
   },
-  // puedes añadir otros proyectos aquí
+  {
+    id: 'aimeetingsummarizer',
+    title: 'AIMeetingSummarizer',
+    description: `AI Meeting Summarizer is a web application that transcribes meeting audio using VOSK or Whisper and
+    generates concise summaries and task lists with a language model (LLM). The app includes real-time progress tracking
+    with React, file storage using MinIO, PDF export, and email sending.`,
+    repoUrl: 'https://github.com/jnovneb/AIMeetingSummarizer'
+  },
+  {
+    id: 'aitattoogenerator',
+    title: 'AITattooGenerator',
+    description: `A full-stack application that allows users to generate tattoo designs based on text prompts, overlay
+    tattoos on images, and manage their generated artwork. The frontend is built with Next.js and the backend with Flask,
+    using a local SQLite database. Images can be generated via a Stable Diffusion model running locally.`,
+    repoUrl: 'https://github.com/jnovneb/AITattooGenerator'
+  }
 ]
 
 export default function Projects() {
@@ -39,6 +55,23 @@ export default function Projects() {
             </Card>
           </motion.div>
         ))}
+
+        {/* Extra card for “coming soon” */}
+        <motion.div
+          key="coming-soon"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          whileHover={{ scale: 1.05 }}
+          transition={{ delay: projects.length * 0.1, duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <Card className="bg-gray-800 text-white border-dashed border-2 border-gray-500">
+            <CardContent className="text-center py-12">
+              <h3 className="text-2xl font-bold mb-2">Much More</h3>
+              <p className="text-gray-300 text-sm">Coming Soon 🚀</p>
+            </CardContent>
+          </Card>
+        </motion.div>
       </div>
     </section>
   )
