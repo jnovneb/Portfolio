@@ -28,7 +28,7 @@ export default function Hero() {
           <Button>See Projects</Button>
         </ScrollLink>
         
-        <a href='JavierNovellaNebotCV.pdf' download className='inline-block'>
+        <a href='JavierNovellaNebotCV2025.pdf' download className='inline-block'>
           <Button variant="outline" className="bg-white text-black hover:bg-gray-100 
                dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700 
                transition-colors duration-200">Download CV</Button>
